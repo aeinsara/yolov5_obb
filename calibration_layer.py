@@ -24,6 +24,7 @@ from PIL import Image
 from numpy import asarray
 
 from sklearn.cluster import KMeans
+import os
 
 class PrototypicalCalibrationBlock:
 
@@ -103,7 +104,7 @@ class PrototypicalCalibrationBlock:
             pkl_file = 'prototypes_10shot_augAll.pkl'
         elif self.type == 'kmeans_normal':
             pkl_file = 'prototypes_10shot_kmeans_normal.pkl'
-        prototypes_dict = pickle.load(open(pkl_file, 'rb'))
+        prototypes_dict = pickle.load(open(os.path.join('prototypes',pkl_file), 'rb'))
         print(f'load {pkl_file} ... ')
         return prototypes_dict
         all_features, all_labels = [], []
