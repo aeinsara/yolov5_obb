@@ -1,0 +1,16 @@
+#fewshot
+
+# Train/val/test sets as 1) dir: path/to/imgs, 2) file: path/to/imgs.txt, or 3) list: [path/to/imgs1, path/to/imgs2, ..]
+path: /mnt/2tra/datasets/dota1024/split2/   # dataset root dir
+train: train_novel_fewshot_ignore_diff/10shot/images    # train images (relative to 'path') 
+val: val_novel/images  # val images (relative to 'path') 
+# test: test/images  # test images (optional)
+
+# Classes
+nc: 4  # number of classes
+names: [ 'basketball-court', 'storage-tank',  
+        'soccer-ball-field', 'roundabout']  # class names
+
+
+# Download script/URL (optional)
+# download: https://ultralytics.com/assets/coco128.zip
