@@ -1,0 +1,17 @@
+# base
+
+# Train/val/test sets as 1) dir: path/to/imgs, 2) file: path/to/imgs.txt, or 3) list: [path/to/imgs1, path/to/imgs2, ..]
+path: /mnt/2tra/datasets/dota1024/split2/   # dataset root dir
+train: train_base/images    # train images (relative to 'path') 
+val: val_base/images   # val images (relative to 'path') 
+# test: test/images  # test images (optional)
+
+# Classes
+nc: 12  # number of classes
+names: ['plane', 'baseball-diamond', 'bridge', 'ground-track-field', 'small-vehicle', 
+        'large-vehicle', 'ship', 'tennis-court','harbor', 'swimming-pool', 'helicopter', 
+        'container-crane']  # class names
+
+
+# Download script/URL (optional)
+# download: https://ultralytics.com/assets/coco128.zip
